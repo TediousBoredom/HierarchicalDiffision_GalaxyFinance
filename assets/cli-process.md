@@ -107,7 +107,7 @@ Traceback (most recent call last):
 issue with the causal loss when concatenating tensors. Let me fix the trainer:
 
 
-# For z_C, use average of z_A and z_B as parent
+For z_C, use average of z_A and z_B as parent
         z_parent_C = (outputs['z_A'] + outputs['z_B']) / 2.0
         loss_causal_C = self._causal_consistency_loss(
 
